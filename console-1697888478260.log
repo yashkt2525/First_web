@@ -1,0 +1,147 @@
+//refrence type datatypes
+undefined
+// What is An Array
+undefined
+let arr = [1,2,3,4,5];
+undefined
+arr.push(6);
+6
+arr;
+(6) [1, 2, 3, 4, 5, 6]
+arr.pop();
+6
+arr;
+(5) [1, 2, 3, 4, 5]0: 11: 22: 33: 44: 5length: 5[[Prototype]]: Array(0)
+arr.unshift(6);
+6
+arr;
+(6) [6, 1, 2, 3, 4, 5]0: 61: 12: 23: 34: 45: 5length: 6[[Prototype]]: Array(0)
+arr.shift();
+6
+arr;
+(5) [1, 2, 3, 4, 5]
+arr.splice(1,1);
+[2]
+arr;
+(4) [1, 3, 4, 5]0: 11: 62: 43: 5length: 4[[Prototype]]: Array(0)
+arr.splice(1,1,6);
+[3]
+arr;
+(4) [1, 6, 4, 5]0: 11: 62: 43: 5length: 4[[Prototype]]: Array(0)
+for(let i=0;i<arr.length;i++){
+    console.log(arr[i]);
+}
+VM686:2 1
+VM686:2 6
+VM686:2 4
+VM686:2 5
+undefined
+//for-in
+undefined
+for(let i in arr){
+    console.log(i);
+}
+VM772:2 0
+VM772:2 1
+VM772:2 2
+VM772:2 3
+undefined
+for(let i in arr){
+    console.log(arr[i]);
+}
+VM792:2 1
+VM792:2 6
+VM792:2 4
+VM792:2 5
+undefined
+// For of
+undefined
+for(let i of arr){
+    console.log(i);
+}
+VM868:2 1
+VM868:2 6
+VM868:2 4
+VM868:2 5
+undefined
+let obj = {"Deepak":45,"Rahul":67};
+undefined
+obj.Deepak;
+45
+obj.Rahul;
+67
+let dhoni = {"Name":"dhoni","Age":35,50:100};
+undefined
+dhoni.Age;
+35
+dhoni.50;
+VM1141:1 Uncaught SyntaxError: Unexpected number
+dhoni[50];
+100
+dhoni[100] = 50;
+50
+dhoni;
+{50: 100, 100: 50, Name: 'dhoni', Age: 35}
+dhoni['Age'];
+35
+dhoni.add = "Bihar";
+'Bihar'
+dhoni;
+{50: 100, 100: 50, Name: 'dhoni', Age: 35, add: 'Bihar'}
+dhoni.34 = 67;
+VM1385:1 Uncaught SyntaxError: Unexpected number
+//arithmetic operator
+undefined
+//+,-,/,*,%
+undefined
+2**2;
+4
+2*2;
+4
+2**3;
+8
+2*3;
+6
+//logical operator
+undefined
+// ||,&&,!
+undefined
+var a = 10;
+undefined
+var b = 20;
+undefined
+var c = 23;
+undefined
+if(a>b && a>c){
+    console.log("a is greater");
+}
+else if(b>a && b>c){
+    console.log("b is greater");
+}else{
+    console.log("c is greater");
+}
+VM1877:7 c is greater
+undefined
+var t = true;
+undefined
+if(!t){
+    console.log("t is false");
+}
+undefined
+t = false;
+false
+if(!t){
+    console.log("t is false");
+}
+VM2071:2 t is false
+undefined
+if(t){}
+undefined
+// Realtional Operators
+undefined
+//<,>,==,<=,>==
+undefined
+5 == 5
+true
+5 <= 4
+false
