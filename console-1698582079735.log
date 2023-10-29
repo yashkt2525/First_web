@@ -1,0 +1,68 @@
+VM670:7 Hey Ram your salary is 9999
+VM670:7 Hey Shyam your salary is 45678
+typeof Employee.prototype;
+'object'
+Employee.prototype.print = function(){
+    console.log(`Hey ${this.name} your salary is ${this.salary}`);
+}
+ƒ (){
+    console.log(`Hey ${this.name} your salary is ${this.salary}`);
+}
+Employee;
+ƒ Employee(id,name,salary){
+    this.id = id;
+    this.name = name;
+    this.salary = salary;
+
+    this.print = function(){
+        console.log(`Hey ${this.name} your salary is ${this.salary}`);
+    }
+…
+var shyam = new Employee(102,"Shyam",45678);
+undefined
+function Employee(id,name,salary){
+    this.id = id;
+    this.name = name;
+    this.salary = salary;
+
+    this.print = function(){
+        console.log(`Hey ${this.name} your salary is ${this.salary}`);
+    }
+    
+}
+var object = new Employee(101,"Ram",9999);
+undefined
+function Employee(id,name,salary){
+    this.id = id;
+    this.name = name;
+    this.salary = salary;
+    
+}
+
+
+undefined
+Employee.prototype.print = function(){
+    console.log(`Hey ${this.name} your salary is ${this.salary}`);
+}
+ƒ (){
+    console.log(`Hey ${this.name} your salary is ${this.salary}`);
+}
+var shyam = new Employee(102,"Shyam",45678);
+undefined
+shyam.print();
+VM1271:2 Hey Shyam your salary is 45678
+undefined
+shyam;
+Employee {id: 102, name: 'Shyam', salary: 45678}id: 102name: "Shyam"salary: 45678[[Prototype]]: Objectprint: ƒ ()arguments: nullcaller: nulllength: 0name: ""prototype: {constructor: ƒ}[[FunctionLocation]]: VM1271:1[[Prototype]]: ƒ ()[[Scopes]]: Scopes[1]constructor: ƒ Employee(id,name,salary)[[Prototype]]: Object
+Employee.prototype === shyam.__proto__;
+true
+class Ram{
+    constructor()
+}
+VM1460:3 Uncaught SyntaxError: Unexpected token '}'
+let a = 10;
+undefined
+let b = 20;
+undefined
+let c = 30;
+undefined
