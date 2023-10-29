@@ -1,0 +1,115 @@
+VM670:7 Hey Ram your salary is 9999
+VM670:7 Hey Shyam your salary is 45678
+typeof Employee.prototype;
+'object'
+Employee.prototype.print = function(){
+    console.log(`Hey ${this.name} your salary is ${this.salary}`);
+}
+ƒ (){
+    console.log(`Hey ${this.name} your salary is ${this.salary}`);
+}
+Employee;
+ƒ Employee(id,name,salary){
+    this.id = id;
+    this.name = name;
+    this.salary = salary;
+
+    this.print = function(){
+        console.log(`Hey ${this.name} your salary is ${this.salary}`);
+    }
+…
+var shyam = new Employee(102,"Shyam",45678);
+undefined
+function Employee(id,name,salary){
+    this.id = id;
+    this.name = name;
+    this.salary = salary;
+
+    this.print = function(){
+        console.log(`Hey ${this.name} your salary is ${this.salary}`);
+    }
+    
+}
+var object = new Employee(101,"Ram",9999);
+undefined
+function Employee(id,name,salary){
+    this.id = id;
+    this.name = name;
+    this.salary = salary;
+    
+}
+
+
+undefined
+Employee.prototype.print = function(){
+    console.log(`Hey ${this.name} your salary is ${this.salary}`);
+}
+ƒ (){
+    console.log(`Hey ${this.name} your salary is ${this.salary}`);
+}
+var shyam = new Employee(102,"Shyam",45678);
+undefined
+shyam.print();
+VM1271:2 Hey Shyam your salary is 45678
+undefined
+shyam;
+Employee {id: 102, name: 'Shyam', salary: 45678}id: 102name: "Shyam"salary: 45678[[Prototype]]: Objectprint: ƒ ()arguments: nullcaller: nulllength: 0name: ""prototype: {constructor: ƒ}[[FunctionLocation]]: VM1271:1[[Prototype]]: ƒ ()[[Scopes]]: Scopes[1]constructor: ƒ Employee(id,name,salary)[[Prototype]]: Object
+Employee.prototype === shyam.__proto__;
+true
+class Ram{
+    constructor()
+}
+VM1460:3 Uncaught SyntaxError: Unexpected token '}'
+let a = 10;
+undefined
+let b = 20;
+undefined
+let c = 30;
+undefined
+let number  = prompt("enter Number");
+undefined
+let number  = prompt("Enter Number");
+for(let i=1;i<=10;i++){
+    console.log(`${number} x ${i} = ${number*i}`);
+}
+VM1770:3 5 x 1 = 5
+VM1770:3 5 x 2 = 10
+VM1770:3 5 x 3 = 15
+VM1770:3 5 x 4 = 20
+VM1770:3 5 x 5 = 25
+VM1770:3 5 x 6 = 30
+VM1770:3 5 x 7 = 35
+VM1770:3 5 x 8 = 40
+VM1770:3 5 x 9 = 45
+VM1770:3 5 x 10 = 50
+undefined
+let number  = prompt("Enter Number");
+for(let i=1;i<=10;i++){
+    console.log(`${number} x ${i} = ${number*i}`);
+}
+VM1772:3 6 x 1 = 6
+VM1772:3 6 x 2 = 12
+VM1772:3 6 x 3 = 18
+VM1772:3 6 x 4 = 24
+VM1772:3 6 x 5 = 30
+VM1772:3 6 x 6 = 36
+VM1772:3 6 x 7 = 42
+VM1772:3 6 x 8 = 48
+VM1772:3 6 x 9 = 54
+VM1772:3 6 x 10 = 60
+undefined
+let number  = prompt("Enter Number");
+for(let i=1;i<=10;i++){
+    console.log(`${number} x ${i} = ${number*i}`);
+}
+VM1774:3 17 x 1 = 17
+VM1774:3 17 x 2 = 34
+VM1774:3 17 x 3 = 51
+VM1774:3 17 x 4 = 68
+VM1774:3 17 x 5 = 85
+VM1774:3 17 x 6 = 102
+VM1774:3 17 x 7 = 119
+VM1774:3 17 x 8 = 136
+VM1774:3 17 x 9 = 153
+VM1774:3 17 x 10 = 170
+undefined
