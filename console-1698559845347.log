@@ -1,0 +1,225 @@
+function Car(h,w){
+    let height = h;
+    let width = w;
+
+    function calcArea(){
+        return this.height * this.width;
+    }
+}
+undefined
+class Car{
+    constructor(h,w){
+        this.height = h;
+        this.width = w;
+    }
+    
+}
+VM217:1 Uncaught SyntaxError: Identifier 'Car' has already been declared
+class Car1{
+    constructor(h,w){
+        this.height = h;
+        this.width = w;
+    }
+    
+}
+undefined
+typeof Car1;
+'function'
+const obj = new Car1();
+undefined
+obj.height;
+undefined
+console.log(obj.height);
+VM441:1 undefined
+undefined
+const obj = new Car1(10,20);
+undefined
+obj.height;
+10
+class Calc{
+    let a;\
+}
+VM557:2 Uncaught SyntaxError: Unexpected identifier 'a'
+class Calc{
+    let a;
+}
+VM560:2 Uncaught SyntaxError: Unexpected identifier 'a'
+class Calc{
+    constructor(a,b){
+        this.x = a;
+        this.y = b;
+    }
+    add(){
+        return this.x + this.y;
+    }
+}
+undefined
+const obj = new Car1(10,20);
+undefined
+obj.add();
+VM722:1 Uncaught TypeError: obj.add is not a function
+    at <anonymous>:1:5
+(anonymous) @ VM722:1
+class Calc{
+    constructor(a,b){
+        this.x = a;
+        this.y = b;
+    }
+    getA(){
+        return a;
+    }
+}
+undefined
+const obj = new Car1(10,20);
+undefined
+obj.Add = function(){
+    return this.x + this.y;
+}
+ƒ (){
+    return this.x + this.y;
+}
+obj.add();
+VM912:1 Uncaught TypeError: obj.add is not a function
+    at <anonymous>:1:5
+(anonymous) @ VM912:1
+obj.Add();
+NaN
+const obj = new Car1(10,20);
+undefined
+obj.Add();
+VM983:1 Uncaught TypeError: obj.Add is not a function
+    at <anonymous>:1:5
+(anonymous) @ VM983:1
+class Calc{
+    constructor(a,b){
+        this.x = a;
+        this.y = b;
+    }
+    add(a,b){
+        return x + y;
+    }
+}
+undefined
+const obj = new Calc(10,20);
+undefined
+obj.add;
+ƒ add(a,b){
+        return x + y;
+    }
+obj.add(10,20);
+VM1014:7 Uncaught ReferenceError: x is not defined
+    at Calc.add (<anonymous>:7:9)
+    at <anonymous>:1:5
+add @ VM1014:7
+(anonymous) @ VM1138:1
+class Calc{
+    constructor(a,b){
+        this.x = a;
+        this.y = b;
+    }
+    add(a,b){
+        return a + b;
+        
+    }
+}
+undefined
+obj.add(10,20);
+VM1014:7 Uncaught ReferenceError: x is not defined
+    at Calc.add (<anonymous>:7:9)
+    at <anonymous>:1:5
+add @ VM1014:7
+(anonymous) @ VM1162:1
+const obj = new Calc(10,20);
+undefined
+obj.add(10,20);
+30
+class Calc{
+    constructor(a,b){
+        this.x = a;
+        this.y = b;
+    }
+    add(){
+        return this.x + this.y;
+        
+    }
+}
+undefined
+const obj = new Calc(10,20);
+undefined
+obj.add;
+ƒ add(){
+        return this.x + this.y;
+        
+    }
+obj.add();
+30
+class Calc{
+    constructor(a,b){
+        this.x = a;
+        this.y = b;
+    }
+    add(){
+        return this.x + this.y;
+        
+    }
+    sub(){
+        return this.x-this.y;
+    }
+    mul(){
+        return this.x*this.y;
+    }
+    div(){
+        return this.x/this.y;
+    }
+}
+undefined
+const object = new Calc(30,40);
+undefined
+obj.mul();
+VM1473:1 Uncaught TypeError: obj.mul is not a function
+    at <anonymous>:1:5
+(anonymous) @ VM1473:1
+object.mul();
+1200
+let marks = new Symbol(10);
+VM1596:1 Uncaught TypeError: Symbol is not a constructor
+    at new Symbol (<anonymous>)
+    at <anonymous>:1:13
+(anonymous) @ VM1596:1
+let marks = Symbol(10);
+undefined
+let student = {
+    name:"xyz",
+    class:"2",
+    {marks}
+}
+VM1674:4 Uncaught SyntaxError: Unexpected token '{'
+let student = {
+    name:"xyz",
+    class:"2",
+    marks:{marks}
+}
+undefined
+student.class;
+'2'
+student.marks;
+{marks: Symbol(10)}marks: Symbol(10)[[Prototype]]: Object
+let marks = new Symbol();
+VM1797:1 Uncaught TypeError: Symbol is not a constructor
+    at new Symbol (<anonymous>)
+    at <anonymous>:1:13
+(anonymous) @ VM1797:1
+let marks = Symbol();
+undefined
+obj = {};
+VM1826:1 Uncaught TypeError: Assignment to constant variable.
+    at <anonymous>:1:5
+(anonymous) @ VM1826:1
+let newObj = {};
+undefined
+newObj[marks] = 10;
+10
+newObj.marks;
+undefined
+newObj;
+{Symbol(): 10}Symbol(): 10[[Prototype]]: Object
